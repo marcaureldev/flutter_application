@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'models/person.dart';
+
+void main() {
+  // runApp(const MyApp());
+  Person person = new Person 
+(
+  birthDate: '27/08/05',
+  name: 'AHOUANDJINOU',
+  surname: 'Marc-Aurel',
+  sex: 'M',
+);
+
+Person spouse = new Person(
+  birthDate: '12/04/05',
+  name: 'HKN',
+  surname: 'C',
+
+  sex: 'F',
+);
+
+person.addSpouse(spouse);
+  print(person.sayHello());
+
+
+
+}
